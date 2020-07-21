@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Category from "./Components/Category/Category";
+import BestSeller from "./Components/BestSeller/BestSeller";
+import Bottom from "./Components/Bottom/Bottom";
+import Event from "./Components/Event/Event";
+import Recommand from "./Components/Recommand/Recommand";
+import "./scss/index.scss";
+import "react-perfect-scrollbar/dist/css/styles.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {};
+  render() {
+    return <Category />;
+  }
 }
-
 export default App;
